@@ -655,7 +655,7 @@ input:required {
     .welcome-slides .owl-prev:hover, .welcome-slides .owl-prev:focus,
     .welcome-slides .owl-next:hover,
     .welcome-slides .owl-next:focus {
-      background-color: #fc6060; }
+      background-color: #020202; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .welcome-slides .owl-prev,
       .welcome-slides .owl-next {
@@ -701,7 +701,7 @@ input:required {
       font-size: 82px;
       display: block;
       margin-bottom: 0;
-      background: -webkit-linear-gradient(#ff9696, #ffe89e);
+      background: -webkit-linear-gradient(#ffa600, #fdfdfd);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
       @media only screen and (max-width: 767px) {
