@@ -130,7 +130,7 @@ ul {
 .mfp-iframe-holder .mfp-close {
   position: fixed;
   z-index: 100;
-  color: #ffffff;
+  color: #000000;
   right: 20px;
   text-align: center;
   padding-right: 0;
@@ -159,7 +159,7 @@ button.mfp-arrow {
   background-color: transparent !important; }
 
 .bg-gray {
-  background-color: #f7f7f7 !important; }
+  background-color: #000000 !important; }
 
 textarea:focus,
 input:focus {
@@ -1587,7 +1587,7 @@ input:required {
       text-align: center;
       line-height: 52px;
       font-size: 30px;
-      color: #ffffff; }
+      color: #000000; }
       .single-portfolio-content .hover-content a:hover, .single-portfolio-content .hover-content a:focus {
         background-color: #000000; }
   .single-portfolio-content:hover img, .single-portfolio-content:focus img {
