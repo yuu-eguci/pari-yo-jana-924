@@ -170,6 +170,35 @@
     </div>
     <!-- Map Area End -->
 
+    <!-- Pager Area Start -->
+    <div class="alime-pager-area section-padding-80-50">
+        <div class="container">
+            <div class="row no-gutters">
+                <!-- Previous -->
+                <div class="col-6">
+                    <div onclick="openInBlankTab('http://www.studio-stairway.com/');" class="previous bg-img" style="background-image: url(img/bg-img/sample-600x300.jpg); cursor: pointer;">
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <a href="http://www.studio-stairway.com/" class="post-title" target="_blank">
+                                Studio STAIRWAY
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Next -->
+                <div class="col-6">
+                    <div onclick="openInBlankTab('http://kuni924neo.jp/sub7.htm');" class="next bg-img" style="background-image: url(img/bg-img/sample-600x300-2.jpg); cursor: pointer;">
+                        <div class="overlay-content d-flex align-items-center justify-content-center">
+                            <a href="http://kuni924neo.jp/sub7.htm" class="post-title" target="_blank">
+                                しんじょうみゆ ボイストレーナー
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pager Area End -->
+
     <!-- Footer Area Start -->
     <footer class="footer-area">
         <div class="container">
@@ -218,6 +247,10 @@
     <script src="js/default-assets/active.js"></script>
 
     <script>
+        const openInBlankTab = function (url) {
+            window.open(url, '_blank');
+        };
+
         $(function () {
 
             // NOTE: Manually added. スマホサイズのときメニューが開かれたら、同時に中のメニューも開くための処理です。
