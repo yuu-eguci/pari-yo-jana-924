@@ -51,34 +51,18 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li><a href="./index.html">Home</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href="#">取扱いギター</a>
                                         <ul class="dropdown">
-                                            <li><a href="./index.html">- Home</a></li>
-                                            <li><a href="./about.html">- About</a></li>
-                                            <li><a href="./gallery.html">- Gallery</a></li>
-                                            <li><a href="./blog.html">- Blog</a></li>
-                                            <li><a href="./single-blog.html">- Blog Details</a></li>
-                                            <li><a href="./contact.html">- Contact</a></li>
-                                            <li><a href="#">- Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="./sword.html">- Sword series</a></li>
+                                            <li><a href="./acoustic.html">- High end Acoustic</a></li>
+                                            <li><a href="./neoselect.html">- Neo Select</a></li>
+                                            <li><a href="https://www.j-guitar.com/shop/detail.php?shop_id=101">- 販売・在庫</a></li>
                                         </ul>
                                     </li>
-                                    <li class="active"><a href="./about.html">About</a></li>
-                                    <li><a href="./gallery.html">Gallery</a></li>
-                                    <li><a href="./blog.html">Blog</a></li>
-                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li class="active"><a href="./about.html">Neo について</a></li>
+                                    <li><a href="./about.html#access">アクセス</a></li>
+                                    <li><a href="https://ws.formzu.net/dist/S12343564/">お問合わせ</a></li>
                                 </ul>
-
-                                <!-- Search Icon -->
-                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i
-                                        class="ti-search"></i></div>
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -402,6 +386,26 @@
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+
+    <script>
+        $(function () {
+
+            // NOTE: Manually added. スマホサイズのときメニューが開かれたら、同時に中のメニューも開くための処理です。
+            const classy_nav = $('.classynav ul');
+            const navbarToggler = $('.classy-navbar-toggler');
+            const closeIcon = $('.classycloseIcon');
+            const ddTrigger = classy_nav.find('li .dd-trigger');
+            navbarToggler.on('click', function () {
+                ddTrigger.trigger('click');
+            });
+            closeIcon.on('click', function () {
+                if (ddTrigger.parent('li').hasClass('active')) {
+                    ddTrigger.trigger('click');
+                }
+            });
+
+        });
+    </script>
 
 </body>
 
