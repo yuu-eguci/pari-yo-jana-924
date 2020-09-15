@@ -977,7 +977,6 @@ input:required {
       height: 240px; } }
   .breadcrumb-area .page-title {
     color: #ffffff;
-    background-color: #302f2f63;
     font-size: 36px; }
     @media only screen and (max-width: 767px) {
       .breadcrumb-area .page-title {
