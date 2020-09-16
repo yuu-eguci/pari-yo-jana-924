@@ -269,7 +269,7 @@
                             <p>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved
+                                <span id="full-year"></span> All rights reserved
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                             <p>
@@ -313,6 +313,9 @@
         };
 
         $(function () {
+
+            // NOTE: もともとのテンプレートでは document.write で描画していますが、 [Violation] Avoid using document.write(). が出るためこちらで描画しています。
+            $('#full-year').html(new Date().getFullYear());
 
             // NOTE: Manually added. スマホサイズのときメニューが開かれたら、同時に中のメニューも開くための処理です。
             const classy_nav = $('.classynav ul');
