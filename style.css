@@ -822,7 +822,7 @@ input:required {
 .about-us-content .line {
   height: 3px;
   width: 70px;
-  background-color: #000000;
+  background-color: #fc6060;
   margin-bottom: 30px; }
 
 .about-video-area {
@@ -977,7 +977,6 @@ input:required {
       height: 240px; } }
   .breadcrumb-area .page-title {
     color: #ffffff;
-    background-color: #302f2f63;
     font-size: 36px; }
     @media only screen and (max-width: 767px) {
       .breadcrumb-area .page-title {
