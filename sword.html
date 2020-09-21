@@ -253,7 +253,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -334,7 +333,6 @@
                 </div>
             </div>
         </div>
-    </div>
     <!-- Follow Area End -->
 
     <!-- Footer Area Start -->
@@ -343,15 +341,23 @@
             <div class="row">
                 <div class="col-12">
                     <div class="footer-content d-flex align-items-center justify-content-between">
-                        <!-- Copywrite Text -->
-                        <div class="copywrite-text">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Guitar Shop Neo </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
+                       <!-- Copywrite Text -->
+                       <div class="copywrite-text">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <span id="full-year"></span> All rights reserved
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                        <p>
+                            This site is made by Midori-tech
+                        </p>
+                        <p>
+                            This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </p>
                         <!-- Footer Logo -->
                         <div class="footer-logo">
-                            <a href="#"><img src="img/core-img/logo7.png" alt=""></a>
+                            <a href="#"><img src="img/core-img/logo7.gif" alt=""></a>
                         </div>
                        <!-- Social Info -->
                        <div class="social-info">
@@ -376,6 +382,35 @@
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+
+    <script>
+        const openInBlankTab = function (url) {
+            window.open(url, '_blank');
+        };
+
+        $(function () {
+
+            // NOTE: もともとのテンプレートでは document.write で描画していますが、 [Violation] Avoid using document.write(). が出るためこちらで描画しています。
+            $('#full-year').html(new Date().getFullYear());
+
+            // NOTE: Manually added. スマホサイズのときメニューが開かれたら、同時に中のメニューも開くための処理です。
+            const classy_nav = $('.classynav ul');
+            const navbarToggler = $('.classy-navbar-toggler');
+            const closeIcon = $('.classycloseIcon');
+            const ddTrigger = classy_nav.find('li .dd-trigger');
+            navbarToggler.on('click', function () {
+                ddTrigger.trigger('click');
+            });
+            closeIcon.on('click', function () {
+                if (ddTrigger.parent('li').hasClass('active')) {
+                    ddTrigger.trigger('click');
+                }
+            });
+
+        });
+    </script>
+
+    
 
 </body>
 

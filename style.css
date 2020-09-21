@@ -43,7 +43,8 @@ Last Update: Feb 22, 2019
 /* :: 01.0 Reboot CSS */
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  }
 
 body {
   font-family: "Poppins", sans-serif;
@@ -82,7 +83,8 @@ p {
   line-height: 1.9;
   color: #ffffff;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  }
 
 img {
   width: 100%;
@@ -378,7 +380,8 @@ input:required {
       .section-heading h2 {
         font-size: 24px; } }
   .section-heading p {
-    margin-bottom: 0; }
+    /* margin-bottom: 0; */
+    }
   .section-heading.white p,
   .section-heading.white h2 {
     color: #ffffff; }
