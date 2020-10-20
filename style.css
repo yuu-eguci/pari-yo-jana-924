@@ -1175,7 +1175,8 @@ input:required {
       .alime-pager-area .next .overlay-content .post-title {
         font-size: 24px;
         color: #ffffff;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        }
         @media only screen and (max-width: 767px) {
           .alime-pager-area .previous .overlay-content .post-title,
           .alime-pager-area .next .overlay-content .post-title {
